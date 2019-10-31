@@ -13,8 +13,12 @@ class MainPagerAdapter (fm: FragmentManager) :
     init {
         titleList.add("Timer")
         titleList.add("StopWatch")
+        titleList.add("Alarm")
+        titleList.add("Clock")
         fragmentList.add(TimerFragment())
         fragmentList.add(StopWatchFragment())
+        fragmentList.add(AlarmFragment())
+        fragmentList.add(ClockFragment())
     }
 
     override fun getCount(): Int = fragmentList.size

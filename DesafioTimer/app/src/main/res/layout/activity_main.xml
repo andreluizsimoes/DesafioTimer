@@ -14,12 +14,18 @@
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:title="Desafio"/>
+            android:title="Desafio"
+            android:titleTextColor="@android:color/white"
+            android:background="@android:color/black"/>
 
         <com.google.android.material.tabs.TabLayout
             android:id="@+id/tablayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            app:tabIndicatorColor="@android:color/white"
+            app:tabBackground="@android:color/black"
+            app:tabTextColor="@android:color/darker_gray"
+            app:tabSelectedTextColor="@android:color/white"
             />
 
     </com.google.android.material.appbar.AppBarLayout>
