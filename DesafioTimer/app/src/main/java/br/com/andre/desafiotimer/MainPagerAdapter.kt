@@ -11,10 +11,12 @@ class MainPagerAdapter (fm: FragmentManager) :
     private val titleList: ArrayList<String> = arrayListOf<String>()
 
     init {
+        titleList.add("Time Zone")
         titleList.add("Timer")
         titleList.add("StopWatch")
         titleList.add("Alarm")
         titleList.add("Clock")
+        fragmentList.add(TimeZoneFragment())
         fragmentList.add(TimerFragment())
         fragmentList.add(StopWatchFragment())
         fragmentList.add(AlarmFragment())
